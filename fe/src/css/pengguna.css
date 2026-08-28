@@ -13,6 +13,12 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   box-sizing: border-box;
 }
+.clock-container{
+  position: absolute;
+  left: 270px;
+  display: flex;
+  width: 400px;
+}
 
 .menejemen-container {
   max-width: 1000px;

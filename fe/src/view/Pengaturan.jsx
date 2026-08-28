@@ -1,5 +1,5 @@
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Index from "./navbar";
 
 import "../css/pengguna.css"
@@ -22,13 +22,35 @@ function Pengguna() {
     user.name.toLowerCase().includes(searchTerm.toLowerCase()),
   );
 
+    const [waktu, setWaktu] = useState(new Date());
+  
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setWaktu(new Date());
+      }, 1000);
+  
+      return () => clearInterval(interval);
+    }, []);
+  
+    const tanggalFormat = waktu.toLocaleDateString("id-ID", {
+      weekday: "long",
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    });
+
   return (
     <Index>
+      <div
+        className="clock-container"
+        style={{ fontSize: "14px", color: "#333", fontWeight: "500" }}
+      >
+        <p>{tanggalFormat}</p>
+      </div>
       <h3 className="judul-halaman">Pengguna</h3>
       <h1 className="judul-sub">Pengguna</h1>
       <div className="menejemen-wrapper">
         <div className="menejemen-container">
-          {/* Controls Bar */}
           <div className="menejemen-controls">
             <div className="search-box">
               <i className="ti ti-search search-icon"></i>
@@ -46,7 +68,6 @@ function Pengguna() {
             </button>
           </div>
 
-          {/* Table List */}
           <div className="user-table-container">
             <table className="user-table">
               <thead>

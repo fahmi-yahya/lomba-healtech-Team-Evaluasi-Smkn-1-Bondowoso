@@ -21,9 +21,9 @@ function RealTanggal() {
     <>
       <div
         className="clock-container"
-        style={{ fontSize: "14px", color: "#333" }}
+        style={{ fontSize: "14px", color: "#333",position:"absolute" }}
       >
-        <span>{tanggalFormat}</span>
+        <p style={{position:"absolute"}}>{tanggalFormat}</p>
       </div>
     </>
   );

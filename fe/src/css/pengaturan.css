@@ -12,6 +12,25 @@
   left: 20%;
 
 }
+.clock-container{
+  position: absolute;
+  left: 270px;
+  display: flex;
+  width: 400px;
+}
+
+.logout{
+  width: 200px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(255, 37, 37);
+  color: #ffffff;
+  font-weight: bold;
+  position: absolute;
+  left: 550px;
+  bottom: 33px;
+  height: 37px;
+}
 
 .judul-sub {
   position: absolute;

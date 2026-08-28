@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Index from "./navbar";
 import "../css/notifikasi.css";
 
@@ -47,8 +47,31 @@ function Notifikasi() {
     );
   };
 
+    const [waktu, setWaktu] = useState(new Date());
+  
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setWaktu(new Date());
+      }, 1000);
+  
+      return () => clearInterval(interval);
+    }, []);
+  
+    const tanggalFormat = waktu.toLocaleDateString("id-ID", {
+      weekday: "long",
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    });
+
   return (
     <Index>
+      <div
+        className="clock-container"
+        style={{ fontSize: "14px", color: "#333", fontWeight: "500" }}
+      >
+        <p>{tanggalFormat}</p>
+      </div>
       <h3 className="judul-halaman">Notifikasi</h3>
       <h1 className="judul-sub">Notifikasi</h1>
       <div className="notif-wrapper">

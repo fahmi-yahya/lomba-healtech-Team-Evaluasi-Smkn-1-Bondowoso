@@ -13,12 +13,185 @@
 
 }
 
+
+.search {
+  background-color: #d9d9d9;
+  width: 290px;
+  position: relative;
+  left: 520px;
+  top: 18px;
+  border-radius: 20px;
+  border: none;
+  height: 35px;
+}
+
+.icon-search {
+  position: absolute;
+  left: 530px;
+  top: 18px;
+  height: 35px;
+  align-items: center;
+  display: flex;
+  width: 40px;
+  justify-content: center;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.btn-fitur6 {
+  width: 110px;
+  background-color: #ffffff;
+  align-items: center;
+  display: flex;
+  border-radius: 10px;
+  height: 30px;
+  position: absolute;
+  left: 1100px;
+  top: 50px;
+  border: none;
+  box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.3);
+}
+
+.semua-fitur{
+  position: absolute;
+  top: 100px;
+
+}
+
+.clock-container{
+  position: absolute;
+  left: 270px;
+  display: flex;
+  width: 400px;
+}
 .judul-sub {
   position: absolute;
   bottom: 83%;
-  z-index: -1;
+  z-index: 1;
   font-weight: bolder;
   left: 21%;
+}
+
+.semua-search{
+  position: absolute;
+  right: -10px;
+  top: 30px;
+}
+
+
+.modal-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-box{
+  background-color: #ffffff;
+  width: 420px;
+  max-height: 85vh;
+  overflow-y: auto;
+  border-radius: 14px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+  padding: 24px;
+}
+
+.modal-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.modal-header h3{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.modal-close{
+  border: none;
+  background: none;
+  color: #555;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.modal-body{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.modal-body label{
+  font-size: 12px;
+  color: #555;
+  margin-top: 6px;
+}
+
+.modal-body input,
+.modal-body select{
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid #dddddd;
+  padding: 0 12px;
+  font-size: 13px;
+  background-color: #ffffff;
+}
+
+.modal-body input:focus,
+.modal-body select:focus{
+  outline: none;
+  border-color: #0e9d78;
+}
+
+.modal-row{
+  display: flex;
+  gap: 12px;
+}
+
+.modal-field{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-footer{
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-batal{
+  height: 38px;
+  padding: 0 16px;
+  border-radius: 8px;
+  border: 1px solid #dddddd;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.btn-simpan{
+  height: 38px;
+  padding: 0 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #0e9d78;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-simpan:hover{
+  background-color: #0c8a68;
 }
 
 .semua-kotak {

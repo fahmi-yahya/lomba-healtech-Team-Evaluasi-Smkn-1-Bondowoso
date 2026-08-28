@@ -13,6 +13,12 @@
   max-width: 900px;
   margin: 0 auto;
 }
+.clock-container{
+  position: absolute;
+  left: 270px;
+  display: flex;
+  width: 400px;
+}
 
 .judul-halaman {
   color: black;

@@ -69,7 +69,6 @@
   bottom: 10px;
   left: 250px;
   border-radius: 10px;
-  border: 1px solid black;
 }
 
 .text-char1{
@@ -115,4 +114,11 @@ bottom: 3px;
 
 .semua-text-bawah{
     margin-left: 20px;
+}
+
+.clock-container{
+  position: absolute;
+  left: 270px;
+  display: flex;
+  width: 400px;
 }

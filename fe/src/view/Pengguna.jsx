@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Index from "./navbar";
 import "../css/pengaturan.css";
+import { Link } from "react-router-dom";
 
 function Pengaturan() {
   const [activeTab, setActiveTab] = useState("profil");
@@ -20,15 +21,38 @@ function Pengaturan() {
     console.log("Data disimpan:", formData);
   };
 
+    const [waktu, setWaktu] = useState(new Date());
+  
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setWaktu(new Date());
+      }, 1000);
+  
+      return () => clearInterval(interval);
+    }, []);
+  
+    const tanggalFormat = waktu.toLocaleDateString("id-ID", {
+      weekday: "long",
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    });
+
   return (
     <Index>
+      <div
+        className="clock-container"
+        style={{ fontSize: "14px", color: "#333", fontWeight: "500" }}
+      >
+        <p>{tanggalFormat}</p>
+      </div>
       <h3 className="judul-halaman">Pengaturan</h3>
       <h1 className="judul-sub">Pengaturan</h1>
       <div className="pengaturan-wrapper">
         <div className="pengaturan-container">
           <div className="pengaturan-header">
             <h1 className="header-title">Pengaturan</h1>
-            <p className="header-date">Rabu, 29 Juli 2026</p>
+            {/* <p className="header-date">Rabu, 29 Juli 2026</p> */}
           </div>
 
           <div className="tab-group">
@@ -42,8 +66,6 @@ function Pengaturan() {
               className={`tab-btn ${activeTab === "notifikasi" ? "active" : ""}`}
               onClick={() => setActiveTab("notifikasi")}
             >
-              {/* Form */}
-
               <span>Notifikasi</span>
             </button>
           </div>
@@ -52,7 +74,7 @@ function Pengaturan() {
             <div className="profile-header">
               <div className="avatar-placeholder" />
               <div className="profile-info">
-                <h2 className="user-name">Ahmad Fauzan</h2>
+                <h2 className="user-name">Ahmad</h2>
                 <p className="user-role">Manajer Menejemen</p>
               </div>
             </div>
@@ -109,6 +131,10 @@ function Pengaturan() {
                   Simpan Perubahan
                 </button>
               </div>
+
+              <Link to="/">
+                <button className="logout">Logout</button>
+              </Link>
             </form>
           </div>
         </div>

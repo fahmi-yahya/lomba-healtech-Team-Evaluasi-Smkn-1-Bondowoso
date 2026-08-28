@@ -7,38 +7,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 function Login() {
-  const [data, setData] = useState({
-    email: "",
-    password: "",
-  });
 
-  function HandleKetik(e) {
-    let name = e.target.name;
-    let value = e.target.value;
-
-    setData({
-      ...data,
-      [name]: value,
-    });
-  }
-
-  const { setToken } = Auth();
-  const Navigate = useNavigate();
-
-  async function HandleLogin(e) {
-    e.preventDefault();
-    try {
-      const response = await axios.post(
-        "http://127.0.0.1:8000/api/login",
-        data,
-      );
-      setData(response.data);
-      Navigate("/Dashboard");
-      setToken(response.data.token);
-    } catch (error) {
-      console.log(error);
-    }
-  }
 
   return (
     <div className="login-container">
@@ -58,42 +27,23 @@ function Login() {
             sesi Anda.
           </p>
 
-          <form onSubmit={HandleLogin} className="login-form">
+          
             <div className="form-group">
               <label className="label-input">Email</label>
-              <input
-                type="email"
-                className="input-field"
-                name="email"
-                onChange={HandleKetik}
-              />
+              <input type="email" className="input-field" name="email" />
             </div>
 
             <div className="form-group">
               <label className="label-input">Password</label>
-              <input
-                type="password"
-                className="input-field"
-                name="password"
-                onChange={HandleKetik}
-              />
+              <input type="password" className="input-field" name="password" />
             </div>
 
-            <div className="lupa-password-container">
-              <a href="#lupa-password" className="label-3">
-                Lupa Password?
-              </a>
-            </div>
-
-            <button className="button-masuk" type="submit">
-              Masuk
-            </button>
-
-            <p className="belum-punya-akun">
-              <span className="span">Belum punya akun? </span>
-              <span className="link-daftar">Daftar</span>
-            </p>
-          </form>
+            <a href="./Dashboard">
+              <button type="submit" className="button-masuk">
+                Masuk
+              </button>
+            </a>
+         
         </div>
       </div>
 

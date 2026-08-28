@@ -1,0 +1,159 @@
+
+.notif-wrapper {
+  min-height: 100vh;
+  padding: 24px;
+  position: absolute;
+  left: 230px;
+  top: 130px;
+  z-index: -1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.notif-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.judul-halaman {
+  color: black;
+  position: fixed;
+  bottom: 93%;
+  font-weight: 200;
+  left: 20%;
+
+}
+
+.judul-sub {
+  position: absolute;
+  bottom: 83%;
+  z-index: -1;
+  font-weight: bolder;
+  left: 21%;
+}
+
+.notif-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.notif-title-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.notif-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #111827;
+  margin: 0;
+}
+
+.notif-badge {
+  background-color: #d1d5db;
+  color: #374151;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.btn-read-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  color: #374151;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.2s;
+}
+
+.btn-read-all:hover {
+  background-color: #f9fafb;
+}
+
+.btn-icon {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.notif-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.notif-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px 24px;
+  display: flex;
+  width: 900px;
+  align-items: flex-end;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f3f4f6;
+}
+
+.notif-content-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.avatar-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #d1d5db;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.notif-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.notif-item-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.notif-item-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.green-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #059669;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.notif-description {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 6px 0 0 0;
+  line-height: 1.4;
+}
+
+.notif-time {
+  font-size: 0.775rem;
+  color: #9ca3af;
+  white-space: nowrap;
+  margin-left: 16px;
+}

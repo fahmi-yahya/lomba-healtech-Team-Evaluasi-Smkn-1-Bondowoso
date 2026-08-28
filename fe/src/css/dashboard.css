@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow-Bold", Helvetica;
+}
+
+.judul-halaman {
+  color: black;
+  position: fixed;
+  bottom: 93%;
+  font-weight: 200;
+  left: 20%;
+}
+
+.judul-sub {
+  position: absolute;
+  bottom: 83%;
+  font-weight: bolder;
+  left: 20%;
+}
+
+.clock-container {
+  position: absolute;
+  top: 115px;
+  left: 35px;
+}
+
+.kotak-info {
+  background-color: #ffffff;
+  width: 280px;
+  height: 120px;
+  border-radius: 10px;
+  left: 250px;
+  box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.3);
+}
+
+.kotak-atas {
+  display: flex;
+  gap: 32px;
+  position: absolute;
+  bottom: 390px;
+  left: 20%;
+}
+
+.kotak-bawah {
+  display: flex;
+  gap: 32px;
+  position: absolute;
+  bottom: 250px;
+  left: 20%;
+}
+
+
+.kotak-semua {
+  position: absolute;
+  left: 250px;
+  bottom: 13px;
+}
+
+.chart {
+  background-color: #ffffff;
+  width: 900px;
+  height: 230px;
+  display: flex;
+  align-items: end;
+  justify-content: baseline;
+  position: absolute;
+  bottom: 10px;
+  left: 250px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.text-char1{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-weight: 700;
+}
+
+.text-char2{
+    position: absolute;
+    color: rgb(203, 200, 200);
+    font-weight: 100;
+    font-size: 12px;
+    bottom: 190px;
+    left: 17px;
+}
+
+.kotak-icon{
+    width: 50px;
+    background-color: #d9d9d9;
+    height: 50px;
+    border-radius: 14px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.text-1{
+    font-weight: 500;
+}
+.text-2{
+font-weight: 400;
+position: relative;
+bottom: 3px;
+}
+.text-3{
+font-size: 12px;
+color: #a4a2a2;
+font-weight: 200;
+position: relative;
+bottom: 3px;
+}
+
+.semua-text-bawah{
+    margin-left: 20px;
+}

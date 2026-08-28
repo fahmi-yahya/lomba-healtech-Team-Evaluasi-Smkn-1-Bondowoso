@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow-Bold", Helvetica, sans-serif;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.login-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #ffffff;
+}
+
+.left-section {
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 400px;
+}
+
+.brand-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.logo-img {
+  width: 48px;
+  height: auto;
+  object-fit: contain;
+}
+
+.brand-title-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.judul-web {
+  color: #000000;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.dibawah-selamat {
+  color: #555555;
+  font-family: "Armata-Regular", Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 2px;
+}
+
+.selamat {
+  color: #000000;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.kata-kata {
+  color: #555555;
+  font-family: "Barlow-Regular", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 28px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.label-input {
+  color: #000000;
+  font-family: "Montserrat-Regular", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+.input-field {
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  height: 40px;
+  padding: 0 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-field:focus {
+  border-color: #08a585;
+}
+
+.lupa-password-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -4px;
+  margin-bottom: 20px;
+}
+
+.label-3 {
+  color: #006a4e;
+  font-family: "Plus Jakarta Sans-Regular", Helvetica, sans-serif;
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+.button-masuk {
+  background-color: #08a585;
+  color: #ffffff;
+  border-radius: 8px;
+  height: 42px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button-masuk:hover {
+  background-color: #06876d;
+}
+
+.belum-punya-akun {
+  font-family: "Montserrat-Regular", Helvetica, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.span {
+  color: #000000;
+}
+
+.link-daftar {
+  color: #006a4e;
+  font-family: "Plus Jakarta Sans-Regular", Helvetica, sans-serif;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.right-section {
+  flex: 1; 
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 60px;
+  overflow: hidden;
+  background-color: #0d5d4d; 
+}
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-text-group {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  max-width: 500px;
+}
+
+.precision-management {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.kata-kata-prec {
+  font-family: "Barlow-Regular", Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.9;
+}

@@ -1,0 +1,131 @@
+@import url('https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menejemen-wrapper {
+  min-height: 100vh;
+    
+  padding: 32px 24px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.menejemen-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.judul-sub {
+  position: absolute;
+  bottom: 83%;
+  z-index: -1;
+  font-weight: bolder;
+  left: 21%;
+}
+.menejemen-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  width: 240px;
+}
+
+.search-icon {
+  color: #374151;
+  font-size: 1.1rem;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.search-box input::placeholder {
+  color: #6b7280;
+}
+
+.btn-add {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  padding: 8px 18px;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #374151;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: background-color 0.2s;
+}
+
+.btn-add i {
+  font-size: 1.1rem;
+}
+
+.btn-add:hover {
+  background-color: #f9fafb;
+}
+
+.user-table-container {
+  width: 900px;
+  position: relative;
+  left: 270px;
+  top: 100px;
+  overflow-x: auto;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.user-table th {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #111827;
+  padding: 12px 16px;
+  border-bottom: 2px solid #b0b0b0;
+}
+
+.user-table td {
+  font-size: 0.95rem;
+  color: #4b5563;
+  padding: 16px;
+  border-bottom: 1px solid #c8c8c8;
+  height: 48px;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 20px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.status-badge.active {
+  background-color: #5bbab5;
+  color: #ffffff;
+}

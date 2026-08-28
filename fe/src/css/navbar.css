@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  display: flex;
+  background-color: #f4f3f3;
+  min-height: 100vh;
+}
+.label {
+  position: relative;
+  right: 5px;
+  font-size: 13px;
+}
+.sidebar {
+  background-color: #049e8e;
+  width: 224px;
+  padding: 16px 12px;
+  position: fixed;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  color: #e5e5e5;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.text-bawah-judul-web {
+  font-size: 10px;
+  position: absolute;
+  top: 27px;
+  font-weight: lighter;
+  font-size: 13px;
+  width: 300px;
+}
+
+.logo-web {
+  width: 90px;
+  position: absolute;
+  top: 10px;
+}
+
+.judul-web-semua {
+  position: absolute;
+  left: 80px;
+  top: 30px;
+}
+
+.text-judul-web {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 25px;
+  color: #fff;
+}
+
+.section-2 {
+  position: absolute;
+  top: 360px;
+  left: 22px;
+}
+
+.section-1 {
+  position: relative;
+  top: 130px;
+  left: 10px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #e5e5e5;
+  gap: 12px;
+  padding: 9px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+ 
+}
+
+.nama-web {
+  display: flex;
+  position: absolute;
+  left: 0.1%;
+  bottom: 99%;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.garis {
+  background-color: #1c1c1e;
+  top: 90px;
+  border: none;
+  width: 300px;
+  right: 13px;
+  height: 0.1px;
+  background-color: black;
+  position: relative;
+}
+
+.garis-2 {
+  background-color: #1c1c1e;
+  top: 444px;
+  border: none;
+  width: 300px;
+  right: 13px;
+  height: 0.1px;
+  background-color: black;
+  position: relative;
+}
+
+.judul-section-nav-1 {
+  font-size: 15px;
+  color: #d9d9d9d0;
+  font-weight: 100;
+}
+
+.judul-section-nav-2 {
+  font-size: 13px;
+  position: relative;
+  bottom: 10px;
+  color: #d9d9d9d0;
+
+  font-weight: 100;
+}
+
+.tempat-profil {
+  position: relative;
+  top: 450px;
+}
+.tempat-profil-atas {
+  position: absolute;
+  top: 10px;
+  left: 84%;
+}
+
+.username {
+  font-size: 17px;
+  font-weight: bold;
+  color: #d9d9d9d0;
+}
+.username-atas {
+  font-size: 17px;
+  font-weight: bold;
+  color: black;
+}
+
+.role {
+  font-size: 13px;
+  color: #d9d9d9d0;
+}
+.role-atas {
+  font-size: 13px;
+  color: black;
+}
+
+.tempat-role-user {
+  position: relative;
+  left: 60px;
+  top: 10px;
+}
+
+.profil {
+  background-color: #d9d9d9d0;
+  width: 40px;
+  height: 40px;
+  top: 5px;
+  left: 8px;
+  position: absolute;
+  border-radius: 100px;
+}
+.profil-atas {
+  background-color: #d9d9d9d0;
+  width: 40px;
+  height: 40px;
+  top: 15px;
+  left: 830px;
+  position: absolute;
+  border-radius: 100px;
+}
+
+.search {
+  background-color: #d9d9d9;
+  width: 290px;
+  position: relative;
+  left: 520px;
+  top: 18px;
+  border-radius: 20px;
+  border: none;
+  height: 35px;
+}
+
+.icon-search {
+  position: absolute;
+  left: 530px;
+  top: 18px;
+  height: 35px;
+  align-items: center;
+  display: flex;
+  width: 40px;
+  justify-content: center;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.icon-bell{
+  position: absolute;
+  top: 8px;
+  left: 9px;
+}
+
+.nav-atas {
+  position: fixed;
+  width: 82.4%;
+  left: 224px;
+  background-color: #ffffff;
+  height: 70px;
+}
+
+.clock-container{
+  position: absolute;
+}

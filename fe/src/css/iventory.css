@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.judul-halaman {
+  color: black;
+  position: fixed;
+  bottom: 93%;
+  font-weight: 200;
+  left: 20%;
+}
+
+.judul-sub {
+  position: absolute;
+  bottom: 83%;
+  font-weight: bolder;
+  left: 21%;
+}
+
+.search2 {
+  background-color: #ffffff;
+  width: 290px;
+  position: absolute;
+  box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.3);
+  left: 19%;
+  bottom: 478px;
+  border-radius: 20px;
+  border: none;
+  height: 40px;
+}
+
+.fitur-fitur {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 72.4%;
+  left: 43%;
+}
+
+.fitur-tambah {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 72.6%;
+  left: 81%;
+}
+
+.btn-fitur2 {
+  width: 110px;
+  background-color: #ffffff;
+  align-items: center;
+  display: flex;
+  border-radius: 10px;
+  height: 30px;
+  border: none;
+  box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.3);
+}
+
+.btn-fitur {
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.3);
+}
+
+.icon-search2 {
+  position: absolute;
+  left: 250px;
+  top: 22.8%;
+  /* left: 10px; */
+  height: 35px;
+  align-items: center;
+  display: flex;
+  width: 40px;
+  justify-content: center;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.table-produk{
+  width: 950px;
+  border-collapse: collapse;
+  font-size: 12px;
+  background-color: #f4f3f3;
+  position: absolute;
+  bottom: 40%;
+  left: 20%;
+}
+
+th,td{
+  text-align: left;
+  padding: 14px;
+}
+
+th{
+  border-bottom:1px solid black ;
+  font-size: 15px;
+}
+
+td{
+  border-bottom:1px solid black ;
+}
+
+.aksi{
+  display: flex;
+  gap: 10px;
+}
+
+.btn-aksi{
+  border: none;
+}

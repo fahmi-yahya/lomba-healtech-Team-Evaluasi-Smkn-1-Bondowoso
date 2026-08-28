@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.judul-halaman {
+  color: black;
+  position: fixed;
+  bottom: 93%;
+  font-weight: 200;
+  left: 20%;
+
+}
+
+.judul-sub {
+  position: absolute;
+  bottom: 83%;
+  z-index: -1;
+  font-weight: bolder;
+  left: 21%;
+}
+
+.semua-kotak {
+  display: flex;
+  width: 900px;
+  /* height: 100px; */
+  flex-wrap: wrap;
+  gap: 20px;
+  position: absolute;
+  bottom: -400px;
+  z-index: -3;
+  left: 20%;
+}
+
+.kotak {
+  width: 400px;
+  background-color: #ffffff;
+  height: 200px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.3);
+}
+
+.btn-semua {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  bottom: 40px;
+}
+.btn-semua button {
+  width: 180px;
+  left: 10px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid black;
+  position: relative;
+  top: 130px;
+}
+
+.btn-po {
+  background-color: #15b494;
+  color: #ffffff;
+}
+
+.info {
+  font-size: 12px;
+  color: grey;
+  position: relative;
+  top: 80px;
+  font-weight: 100;
+  left: 10px;
+}
+
+
+.garis hr {
+  position: absolute;
+  bottom: 200px;
+  right: 550px;
+}
+
+.kotak-img {
+  width: 50px;
+  height: 50px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+}
+
+.semua-kotak-atas {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.text-kotak-atas {
+  font-size: 13px;
+}

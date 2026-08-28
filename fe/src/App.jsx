@@ -19,61 +19,47 @@ function App() {
   return (
     <>
       <Router>
-        <AuthProvider>
           <Routes>
             <Route path="/" element={<Login />} />
             <Route
               path="/Dashboard"
               element={
-                <AuthProtected>
                   <Dashboard />
-                </AuthProtected>
               }
             />
 
             <Route
               path="/Inventory"
               element={
-                <AuthProtected>
                   <Inventory />
-                </AuthProtected>
               }
             />
          
             <Route
               path="/Supplier"
               element={
-                <AuthProtected>
                   <Supplier />
-                </AuthProtected>
               }
             />
             <Route
               path="/Notifikasi"
               element={
-                <AuthProtected>
                   <Notifikasi />
-                </AuthProtected>
               }
             />
             <Route
               path="/Pengguna"
               element={
-                <AuthProtected>
                   <Pengguna />
-                </AuthProtected>
               }
             />
             <Route
               path="/Pengaturan"
               element={
-                <AuthProtected>
                   <Pengaturan />
-                </AuthProtected>
               }
             />
           </Routes>
-        </AuthProvider>
       </Router>
     </>
   );

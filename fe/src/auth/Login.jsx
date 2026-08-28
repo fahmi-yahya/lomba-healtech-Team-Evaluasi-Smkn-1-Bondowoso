@@ -1,6 +1,6 @@
 import logo from "../assets/logo-warna.png";
 import bg from "../assets/bgLogin.jpeg";
-import "../css/Login.css";
+import "../css/login.css";
 import { useState } from "react";
 import { Auth } from "./AuthProvider";
 import axios from "axios";

@@ -1,5 +1,5 @@
 import Index from "./navbar";
-import "../css/iventory.css";
+import "../css/Iventory.css";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
